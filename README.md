@@ -14,3 +14,4 @@ bash run.sh
 ```
 ## Sample Result
 ![MODEL](lung_mask.png)
+LGTM!
