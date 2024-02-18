@@ -1,0 +1,5 @@
+2024-02-18 06:13:26,659 Lung Detection INFO: Namespace(seed=123
+ output_dir='output'
+ dataset_dir='/mnt/TransProgver/HU/'
+ model='R231'
+ fillmodel='R231')
