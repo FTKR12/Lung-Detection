@@ -9,9 +9,11 @@ from utils.logger import setup_logger
 from utils.options import get_args
 from lungmask import LMInferer
 
-def main(args):
+def main(args, logger):
 
     data_path = glob.glob(args.dataset_dir+'*')
+    logger.info(f'Patient Number: {len(data_path)}')
+
     inferer = LMInferer(modelname = args.model)
 
     for data in tqdm(data_path):
@@ -42,5 +44,5 @@ if __name__ == '__main__':
     logger = setup_logger('Lung Detection', f'{args.output_dir}')
     logger.info(str(args).replace(',','\n'))
 
-    main(args)
+    main(args, logger)
 
