@@ -14,7 +14,7 @@ def main(args):
     data_path = glob.glob(args.dataset_dir+'*')
     inferer = LMInferer(modelname = args.model)
 
-    for data in tqdm(data_path[:3]):
+    for data in tqdm(data_path):
         cts = glob.glob(data+'/*')
         for ct_path in cts:
             # segmentation
